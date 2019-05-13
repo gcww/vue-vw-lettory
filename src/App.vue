@@ -1,14 +1,20 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+    <router-view/>
+    <footer class="footer">
+      <floor/>
+    </footer>
   </div>
 </template>
-
-<style lang="scss">
+<script>
+import floor from "./views/floor/floor.vue";
+export default {
+  components: {
+    floor
+  }
+};
+</script>
+<style>
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -18,12 +24,21 @@
 }
 #nav {
   padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+}
+body {
+  background-color: #fafafa;
 }
 </style>

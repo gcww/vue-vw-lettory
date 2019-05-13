@@ -1,10 +1,21 @@
-import Vue from "vue";
-import Vuex from "vuex";
+import Vue from 'vue'
+import Vuex from 'vuex'
 
-Vue.use(Vuex);
+Vue.use(Vuex)
 
 export default new Vuex.Store({
-  state: {},
-  mutations: {},
-  actions: {}
-});
+  state: {
+    dataList:[]
+  },
+  mutations: {
+    save(state,param){
+      state.dataList = param;
+    }
+  },
+  actions: {
+    save({commit},param){
+      console.log(11);
+      commit("save",param);
+    }
+  }
+})
