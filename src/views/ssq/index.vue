@@ -41,6 +41,7 @@ export default {
           this.currentTabComponent = numForecast;
           break;
       }
+      console.log(111);
     }
   }
 };
