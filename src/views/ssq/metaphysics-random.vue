@@ -55,7 +55,7 @@ export default {
     }
   },
   created() {
-    console.log(this.title);
+    
   },
   methods: {
     returnList() {
