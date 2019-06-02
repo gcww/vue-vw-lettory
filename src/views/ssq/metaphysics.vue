@@ -141,6 +141,7 @@ export default {
       if (this.unumber && this.unumber.length > 0) {
         this.unumber = this.unumber.slice(0, this.unumber.length - 1);
       }
+      console.log(this.unumber);
     },
 
     returnList() {
