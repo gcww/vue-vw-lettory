@@ -14,7 +14,7 @@ export default new Vuex.Store({
   },
   actions: {
     save({commit},param){
-      console.log(11);
+      console.log(112);
       commit("save",param);
     }
   }
