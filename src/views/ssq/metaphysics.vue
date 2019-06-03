@@ -115,9 +115,6 @@ export default {
         console.log("ok");
       }
     },
-    setNumber() {
-      //   let nowMonth = new Date().getMonth() + 1;
-    },
     comfirm(value) {
       this.birthDate = new Date(value);
       this.birthTXT = `${new Date(value).getFullYear()}年${new Date(
